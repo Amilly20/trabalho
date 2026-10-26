@@ -145,12 +145,13 @@ th {
 
 .color-layout {
   display: grid;
-  grid-template-columns: minmax(120px, 1fr) minmax(180px, 2fr) minmax(120px, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-rows: 70px minmax(180px, 1fr) 60px;
   grid-template-areas:
     "header header header"
     "left title right"
     "footer footer footer";
-  min-height: 270px;
+  min-height: 310px;
   overflow: hidden;
   border: 1px solid #dce5ef;
   border-radius: 10px;
@@ -170,20 +171,20 @@ th {
 
 .color-layout-header {
   grid-area: header;
-  background: #16803c;
+  background-color: #16803c;
   color: #fff;
 }
 
 .color-layout-left {
   grid-area: left;
-  background: #ffd83d;
+  background-color: #ffd83d;
   color: #182230;
 }
 
 .color-layout-title {
   grid-area: title;
   gap: 4px;
-  background: #1769aa;
+  background-color: #d93636;
   color: #fff;
 }
 
@@ -193,21 +194,22 @@ th {
 }
 
 .layout-star {
-  color: #ffd83d;
-  font-size: 2rem;
+  color: #fff;
+  font-size: 4rem;
   line-height: 1;
 }
 
 .color-layout-right {
   grid-area: right;
-  background: #d93636;
+  background-color: #1769aa;
   color: #fff;
 }
 
 .color-layout-footer {
   grid-area: footer;
-  background: #16803c;
-  color: #fff;
+  background-color: #ffffff;
+  color: #182230;
+  border-top: 1px solid #dce5ef;
 }
 
 .sidebar {
