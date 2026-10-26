@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atividade 02: exemplos de tabelas, classes, IDs, layouts, listas e elementos HTML.">
+  <title>Atividade 02 | HTML e CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a class="home-link" href="../index.html">← Página inicial</a>
+    <p class="eyebrow">Atividade 02</p>
+    <h1>Praticando HTML e CSS</h1>
+    <p>Esta página reúne a estrutura introdutória da Atividade 01 e novos exemplos.</p>
+  </header>
+
+  <main class="page-layout">
+    <article class="main-content">
+      <section class="content-card" id="introducao">
+        <h2>Sobre esta atividade</h2>
+        <p>O HTML organiza o conteúdo de uma página. Os títulos, parágrafos, listas e links abaixo são exemplos de elementos básicos.</p>
+      </section>
+
+      <section class="content-card">
+        <h2>O que estou aprendendo</h2>
+        <ul>
+          <li>Como estruturar um documento HTML.</li>
+          <li>Como usar títulos e parágrafos.</li>
+          <li>Como criar uma lista e um link.</li>
+        </ul>
+        <p>Na <a href="../atv01/index.html">Atividade 01</a>, está a versão introdutória destes conceitos.</p>
+      </section>
+
+      <section class="content-card" id="tabelas">
+        <h2>Tabelas</h2>
+        <p>A tabela abaixo apresenta os dias e horários de atendimento.</p>
+        <div class="table-wrapper">
+          <table>
+            <caption>Atendimento no Laboratório 107</caption>
+            <thead>
+              <tr><th scope="col">Dia</th><th scope="col">Horário</th><th scope="col">Local</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Terça-feira</td><td>14h às 18h</td><td>Laboratório 107</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-card" id="classes-ids">
+        <h2>Classes e IDs</h2>
+        <p class="example-class">Este parágrafo usa a classe <code>.example-class</code>, que pode ser reaproveitada em vários elementos.</p>
+        <p id="unique-example">Este parágrafo tem o ID <code>unique-example</code>, único nesta página.</p>
+      </section>
+
+      <section class="content-card" id="listas">
+        <h2>Listas</h2>
+        <div class="list-columns">
+          <div>
+            <h3>Lista não ordenada</h3>
+            <ul><li>HTML</li><li>CSS</li><li>Acessibilidade</li></ul>
+          </div>
+          <div>
+            <h3>Lista ordenada</h3>
+            <ol><li>Planejar o conteúdo.</li><li>Marcar a estrutura.</li><li>Aplicar os estilos.</li></ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-card" id="block-inline">
+        <h2>Elementos block e inline</h2>
+        <p>Os blocos abaixo são elementos <code>block</code>: começam em uma nova linha e ocupam a largura disponível.</p>
+        <div class="block-example">Este <code>div</code> é um elemento block.</div>
+        <p>Já o texto fica na mesma linha com elementos <code>inline</code>, como <strong>strong</strong> e <a href="#introducao">links</a>.</p>
+        <p class="inline-example"><span>Este span</span> e <a href="#listas">este link</a> são exemplos inline.</p>
+      </section>
+    </article>
+
+    <aside class="sidebar">
+      <h2>Layout com colunas</h2>
+      <p>Este painel lateral e o conteúdo principal formam um layout responsivo com CSS Grid.</p>
+      <h3>Nesta atividade</h3>
+      <ul>
+        <li><a href="#tabelas">Tabelas</a></li>
+        <li><a href="#classes-ids">Classes e IDs</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#block-inline">Block e inline</a></li>
+      </ul>
+      <p><a href="../atv01/index.html">Visitar a Atividade 01</a></p>
+    </aside>
+  </main>
+
+  <footer>Atividade 02 — Desenvolvimento Web</footer>
+</body>
+</html>

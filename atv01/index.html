@@ -3,29 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal de Atividades Web</title>
+  <meta name="description" content="Atividade 01: estrutura básica de uma página HTML.">
+  <title>Atividade 01 | HTML e CSS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Atividades de Desenvolvimento Web</h1>
-    <p>Aluno(a): Amilly</p>
+  <header class="page-header">
+    <a class="home-link" href="../index.html">← Página inicial</a>
+    <p class="eyebrow">Atividade 01</p>
+    <h1>Minha primeira página Web</h1>
+    <p>Uma introdução à estrutura básica do HTML.</p>
   </header>
 
   <main>
-    <section class="links-container">
-      <h2>Acesse as atividades:</h2>
-      <ul>
-        <li><a href="./atv01/index.html">Atividade 01</a></li>
-        <li><a href="./atv02/index.html">Atividade 02</a></li>
-      </ul>
+    <section class="content-card">
+      <h2>Sobre esta atividade</h2>
+      <p>O HTML organiza o conteúdo de uma página. Os títulos, parágrafos, listas e links abaixo são exemplos de elementos básicos.</p>
     </section>
 
-    <aside class="info-atendimento">
-      <h3>Horário de Atendimento e Laboratório</h3>
-      <p><strong>Dúvidas / Estudos:</strong> Toda terça-feira, das 14h às 18h.</p>
-      <p><strong>Local:</strong> Laboratório 107 (disponível para atividades Web).</p>
-    </aside>
+    <section class="content-card">
+      <h2>O que estou aprendendo</h2>
+      <ul>
+        <li>Como estruturar um documento HTML.</li>
+        <li>Como usar títulos e parágrafos.</li>
+        <li>Como criar uma lista e um link.</li>
+      </ul>
+      <p>Na <a href="../atv02/index.html">Atividade 02</a>, estes conceitos aparecem junto com novos exemplos de HTML e CSS.</p>
+    </section>
   </main>
+
+  <footer>Atividade 01 — Desenvolvimento Web</footer>
 </body>
 </html>
