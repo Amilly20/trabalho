@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atividade 06: página inicial com links para as atividades, feita com Flexbox.">
+  <title>Atividade 06 | Página inicial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span> Minhas atividades</a>
+    <p class="eyebrow">ATIVIDADE 06 · DESENVOLVIMENTO WEB</p>
+    <h1>Aprender fazendo.</h1>
+    <p>Uma página inicial para reunir e acessar as atividades de HTML e CSS.</p>
+  </header>
+
+  <div class="page-layout">
+    <aside class="sidebar" aria-labelledby="navigation-title">
+      <div>
+        <p class="sidebar-kicker">NAVEGAÇÃO</p>
+        <h2 id="navigation-title">Atividades</h2>
+        <nav aria-label="Links para as atividades">
+          <ul>
+            <li><a href="../atv01/index.html"><span class="nav-number">01</span> Atividade 01</a></li>
+            <li><a href="../atv02/index.html"><span class="nav-number">02</span> Atividade 02</a></li>
+            <li><a href="../atv05/index.html"><span class="nav-number">05</span> Atividade 05</a></li>
+            <li><a class="current-link" href="./index.html" aria-current="page"><span class="nav-number">06</span> Atividade 06</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a class="back-link" href="../index.html">← Voltar ao site</a>
+    </aside>
+
+    <main class="content">
+      <section class="welcome-card">
+        <p class="section-kicker">SEU ESPAÇO DE ESTUDOS</p>
+        <h2>Olá! Que bom ter você por aqui.</h2>
+        <p>Escolha uma atividade para abrir. Cada página reúne um exercício diferente para praticar desenvolvimento web.</p>
+      </section>
+
+      <section class="activity-section" aria-labelledby="activities-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">ATALHOS</p>
+            <h2 id="activities-title">Todas as atividades</h2>
+          </div>
+          <span class="activity-count">04 páginas</span>
+        </div>
+
+        <div class="activity-list">
+          <a class="activity-card peach" href="../atv01/index.html">
+            <span class="activity-number">01</span>
+            <span class="activity-copy">
+              <strong>Minha primeira página web</strong>
+              <small>Estrutura e elementos básicos de HTML</small>
+            </span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="activity-card lilac" href="../atv02/index.html">
+            <span class="activity-number">02</span>
+            <span class="activity-copy">
+              <strong>Praticando HTML e CSS</strong>
+              <small>Tabelas, listas, classes, IDs e layouts</small>
+            </span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="activity-card mint" href="../atv05/index.html">
+            <span class="activity-number">05</span>
+            <span class="activity-copy">
+              <strong>Linguagens e frameworks web</strong>
+              <small>Semelhanças e diferenças entre tecnologias</small>
+            </span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="activity-card sand" href="./index.html" aria-current="page">
+            <span class="activity-number">06</span>
+            <span class="activity-copy">
+              <strong>Página inicial das atividades</strong>
+              <small>Template com Flexbox, menu lateral e rodapé</small>
+            </span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="page-footer">
+    <a href="../index.html">Minhas atividades</a>
+    <span>Atividade 06 · HTML e CSS com Flexbox</span>
+  </footer>
+</body>
+</html>

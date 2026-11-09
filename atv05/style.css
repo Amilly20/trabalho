@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ink: #202b30;
+  --muted: #687578;
+  --green: #245c4a;
+  --green-dark: #193f35;
+  --paper: #f5f4ef;
+  --line: #e4e6df;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+
+.page-header {
+  padding: 24px max(24px, calc((100% - 1120px) / 2)) 42px;
+  background: var(--green-dark);
+  color: #fffefa;
+}
+
+.home-link,
+.page-footer a {
+  color: #e6ca82;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.home-link:hover,
+.page-footer a:hover {
+  text-decoration: underline;
+}
+
+.eyebrow,
+.section-label {
+  color: #b7c8b9;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.eyebrow {
+  margin: 32px 0 8px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  letter-spacing: -0.05em;
+  line-height: 1.16;
+}
+
+.page-header > p:last-child {
+  max-width: 630px;
+  margin: 12px 0 0;
+  color: #d3ddd4;
+}
+
+.page-content {
+  width: min(100% - 40px, 1120px);
+  margin: 34px auto 44px;
+}
+
+.intro-card,
+.table-card,
+.summary-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fffefa;
+}
+
+.intro-card {
+  margin-bottom: 20px;
+  padding: 24px 28px;
+}
+
+.intro-card .section-label,
+.table-heading .section-label {
+  margin: 0 0 5px;
+  color: #7e8d80;
+}
+
+.intro-card h2,
+.table-heading h2 {
+  margin: 0;
+  font-size: clamp(1.2rem, 3vw, 1.55rem);
+  letter-spacing: -0.035em;
+}
+
+.intro-card p:last-child {
+  max-width: 850px;
+  margin: 9px 0 0;
+  color: var(--muted);
+}
+
+.table-card {
+  padding: 24px;
+}
+
+.table-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 17px;
+}
+
+.technology-count {
+  flex: 0 0 auto;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: #63736a;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid #dfe5df;
+  border-radius: 9px;
+}
+
+.table-scroll:focus-visible {
+  outline: 3px solid #bb9c58;
+  outline-offset: 3px;
+}
+
+table {
+  width: 100%;
+  min-width: 970px;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+caption {
+  padding: 11px 13px;
+  background: #f8faf7;
+  color: #63736a;
+  font-size: 0.78rem;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 13px;
+  border-top: 1px solid #e5e9e4;
+  border-right: 1px solid #e5e9e4;
+  vertical-align: top;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+thead th {
+  background: #eaf0e9;
+  color: #294d3f;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+tbody tr:nth-child(even) td,
+tbody tr:nth-child(even) th {
+  background: #fafbf8;
+}
+
+tbody th {
+  min-width: 115px;
+  background: #fffefa;
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.76rem;
+  white-space: nowrap;
+}
+
+.markup {
+  background: #fce9dc;
+  color: #975027;
+}
+
+.styles {
+  background: #e3eef9;
+  color: #315d8a;
+}
+
+.script {
+  background: #fbf2d8;
+  color: #79611a;
+}
+
+.library {
+  background: #e4f2e9;
+  color: #276344;
+}
+
+.framework {
+  background: #eee8f8;
+  color: #634b91;
+}
+
+.scroll-hint {
+  margin: 11px 2px 0;
+  color: #77827c;
+  font-size: 0.75rem;
+}
+
+.summary-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 17px 20px;
+  border-color: #e5dfc8;
+  background: #f8f3e5;
+}
+
+.summary-icon {
+  color: #a78638;
+}
+
+.summary-card p {
+  margin: 0;
+  color: #56665c;
+}
+
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px max(24px, calc((100% - 1120px) / 2));
+  background: var(--green-dark);
+  color: #d3ddd4;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .page-content {
+    width: min(100% - 28px, 1120px);
+    margin-top: 20px;
+  }
+
+  .page-header {
+    padding: 20px 20px 32px;
+  }
+
+  .intro-card,
+  .table-card {
+    padding: 18px;
+  }
+
+  .table-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .page-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px 20px;
+  }
+}
