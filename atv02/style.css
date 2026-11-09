@@ -119,6 +119,45 @@ th {
   background: #e8f2fb;
 }
 
+.comparison-table-wrapper {
+  border: 1px solid #dce5ef;
+  border-radius: 8px;
+}
+
+.comparison-table {
+  min-width: 860px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 12px;
+  vertical-align: top;
+}
+
+.comparison-table thead th {
+  color: #123c69;
+}
+
+.comparison-table tbody th {
+  background: #f5f8fb;
+}
+
+.comparison-table tbody tr:nth-child(even) td {
+  background: #fafcff;
+}
+
+.table-note {
+  margin: 14px 0 0;
+  padding: 12px 14px;
+  border-left: 4px solid #2878bd;
+  border-radius: 0 6px 6px 0;
+  background: #eaf4fc;
+  color: #40546a;
+  font-size: 0.92rem;
+}
+
 .list-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

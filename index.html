@@ -3,39 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Página inicial das atividades de desenvolvimento web.">
-  <title>Atividades de Desenvolvimento Web</title>
+  <meta name="description" content="Atividades e exercícios de HTML e CSS para estudar desenvolvimento web.">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>Minhas atividades | Caderno Web</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <p class="eyebrow">Desenvolvimento Web</p>
-    <h1>Atividades de HTML e CSS</h1>
-    <p>Escolha uma atividade para começar.</p>
+    <div class="topbar">
+      <a class="brand" href="./index.html" aria-label="Caderno Web, página inicial">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>Caderno<span class="brand-light">Web</span></span>
+      </a>
+      <span class="course-label"><span class="status-dot" aria-hidden="true"></span> Meu espaço de estudos</span>
+    </div>
+
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> DESENVOLVIMENTO WEB · 2026</p>
+        <h1>Aprender fazendo.<br><span>Uma página de cada vez.</span></h1>
+        <p class="hero-description">Um espaço para reunir minhas atividades, praticar novos conceitos e acompanhar minha jornada com HTML e CSS.</p>
+        <a class="hero-link" href="#atividades">Explorar atividades <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-card">
+          <span class="art-card-label">MEU PROGRESSO</span>
+          <strong>02<span>/04</span></strong>
+          <span class="art-card-caption">atividades publicadas</span>
+          <div class="progress-track"><span></span></div>
+        </div>
+        <span class="art-sparkle sparkle-one">✳</span>
+        <span class="art-sparkle sparkle-two">✳</span>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="activity-list" aria-labelledby="activities-title">
-      <h2 id="activities-title">Minhas atividades</h2>
-      <a class="activity-link" href="./atv01/index.html">
-        <span class="activity-number">01</span>
-        <span><strong>Atividade 01</strong><small>Estrutura básica de uma página HTML</small></span>
-        <span class="arrow" aria-hidden="true">→</span>
-      </a>
-      <a class="activity-link" href="./atv02/index.html">
-        <span class="activity-number">02</span>
-        <span><strong>Atividade 02</strong><small>HTML, tabelas, listas, layouts e mais</small></span>
-        <span class="arrow" aria-hidden="true">→</span>
-      </a>
-    </section>
+  <div class="page-layout">
+    <aside class="sidebar" aria-labelledby="sidebar-title">
+      <div>
+        <p class="sidebar-kicker">MENU</p>
+        <h2 id="sidebar-title">Navegação</h2>
+        <nav aria-label="Navegação principal">
+          <ul>
+            <li><a class="nav-link nav-link-current" href="./index.html" aria-current="page"><span class="nav-icon" aria-hidden="true">⌂</span> Início</a></li>
+            <li><a class="nav-link" href="#atividade-01"><span class="nav-icon nav-number" aria-hidden="true">01</span> Atividade 01</a></li>
+            <li><a class="nav-link" href="#atividade-02"><span class="nav-icon nav-number" aria-hidden="true">02</span> Atividade 02</a></li>
+          </ul>
+        </nav>
+      </div>
 
-    <aside class="support-info">
-      <h2>Atendimento e espaço de estudo</h2>
-      <p><strong>Quando:</strong> toda terça-feira, das 14h às 18h.</p>
-      <p><strong>Onde:</strong> Laboratório 107, disponível para atividades de Web nesse horário.</p>
+      <div class="sidebar-note">
+        <span class="note-icon" aria-hidden="true">✦</span>
+        <p><strong>Um passo de cada vez.</strong><br>Praticar também faz parte do progresso.</p>
+      </div>
     </aside>
-  </main>
 
-  <footer>Atividades de Desenvolvimento Web</footer>
+    <main class="content" id="atividades">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">POR ONDE COMEÇAR</p>
+          <h2>Minhas atividades<span class="heading-period">.</span></h2>
+          <p class="section-description">Escolha um exercício e continue de onde parou.</p>
+        </div>
+        <span class="count-badge">02 disponíveis</span>
+      </div>
+
+      <div class="activity-list">
+        <article class="activity-card card-peach" id="atividade-01">
+          <div class="card-topline">
+            <span class="card-index">ATIVIDADE <strong>01</strong></span>
+            <span class="card-symbol" aria-hidden="true">&lt;h1&gt;</span>
+          </div>
+          <div class="card-content">
+            <p class="card-category">PRIMEIROS PASSOS</p>
+            <h3>Minha primeira página web</h3>
+            <p>Uma introdução à estrutura básica do HTML, com títulos, parágrafos, listas e links.</p>
+            <a class="card-link" href="./atv01/index.html">Abrir atividade <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="activity-card card-lilac" id="atividade-02">
+          <div class="card-topline">
+            <span class="card-index">ATIVIDADE <strong>02</strong></span>
+            <span class="card-symbol" aria-hidden="true">{ }</span>
+          </div>
+          <div class="card-content">
+            <p class="card-category">EXPLORANDO HTML &amp; CSS</p>
+            <h3>Praticando HTML e CSS</h3>
+            <p>Exemplos de tabelas, listas, classes, IDs, elementos e diferentes layouts.</p>
+            <a class="card-link" href="./atv02/index.html">Abrir atividade <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="bottom-note">
+        <span class="bottom-note-mark" aria-hidden="true">i</span>
+        <p>Novas atividades serão adicionadas aqui conforme forem concluídas.</p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="./index.html"><span aria-hidden="true">&lt;/&gt;</span> CadernoWeb</a>
+    <p>Feito com curiosidade e um pouco de código.</p>
+    <span class="footer-year">2026</span>
+  </footer>
 </body>
 </html>

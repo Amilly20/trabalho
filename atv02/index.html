@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Atividade 02: exemplos de tabelas, classes, IDs, layouts, listas e elementos HTML.">
   <title>Atividade 02 | HTML e CSS</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <header class="page-header">
@@ -46,6 +46,84 @@
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section class="content-card" id="linguagens-frameworks">
+        <h2>Linguagens e frameworks web</h2>
+        <p>As tecnologias abaixo podem trabalhar juntas, mas têm papéis diferentes no desenvolvimento de um site.</p>
+        <div class="table-wrapper comparison-table-wrapper">
+          <table class="comparison-table">
+            <caption>Comparação de tecnologias de desenvolvimento web</caption>
+            <thead>
+              <tr>
+                <th scope="col">Tecnologia</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Para que serve</th>
+                <th scope="col">Semelhanças</th>
+                <th scope="col">Diferenças</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">HTML</th>
+                <td>Linguagem de marcação</td>
+                <td>Define a estrutura e o significado do conteúdo da página.</td>
+                <td>Trabalha junto com CSS e JavaScript na construção de sites.</td>
+                <td>Organiza o conteúdo; não é uma linguagem de programação nem define, por si só, a aparência visual.</td>
+              </tr>
+              <tr>
+                <th scope="row">CSS</th>
+                <td>Linguagem de estilos</td>
+                <td>Controla cores, tipografia, espaçamento, layout e adaptação a diferentes telas.</td>
+                <td>É aplicada aos elementos HTML e pode ser combinada com bibliotecas e frameworks.</td>
+                <td>Descreve a apresentação visual, enquanto HTML estrutura o conteúdo e JavaScript implementa comportamentos.</td>
+              </tr>
+              <tr>
+                <th scope="row">JavaScript</th>
+                <td>Linguagem de programação</td>
+                <td>Adiciona lógica e interatividade, como menus, validação de formulários e atualizações de conteúdo.</td>
+                <td>É frequentemente usada com HTML e CSS no navegador.</td>
+                <td>Executa instruções e comportamentos; não é, por si só, um framework.</td>
+              </tr>
+              <tr>
+                <th scope="row">TypeScript</th>
+                <td>Linguagem baseada em JavaScript</td>
+                <td>Acrescenta verificação de tipos para ajudar a encontrar erros durante o desenvolvimento.</td>
+                <td>Usa a sintaxe e os recursos de JavaScript.</td>
+                <td>O código TypeScript normalmente é convertido em JavaScript antes de ser executado pelo navegador.</td>
+              </tr>
+              <tr>
+                <th scope="row">React</th>
+                <td>Biblioteca de interface</td>
+                <td>Ajuda a criar interfaces divididas em componentes reutilizáveis.</td>
+                <td>Assim como Vue e Angular, é usado para construir interfaces dinâmicas.</td>
+                <td>É uma biblioteca JavaScript; roteamento e outras funções podem exigir ferramentas adicionais.</td>
+              </tr>
+              <tr>
+                <th scope="row">Angular</th>
+                <td>Framework de aplicação</td>
+                <td>Oferece uma estrutura integrada para desenvolver aplicações web, geralmente com TypeScript.</td>
+                <td>Assim como React e Vue, permite criar interfaces baseadas em componentes.</td>
+                <td>Inclui mais recursos e convenções no próprio framework, como roteamento e ferramentas de formulários.</td>
+              </tr>
+              <tr>
+                <th scope="row">Vue</th>
+                <td>Framework progressivo de interface</td>
+                <td>Cria interfaces reativas e pode ser adotado em uma parte de um site ou em uma aplicação completa.</td>
+                <td>Compartilha com React e Angular a composição de interfaces com componentes.</td>
+                <td>Pode ser incorporado gradualmente; a configuração e o conjunto de recursos escolhidos variam conforme o projeto.</td>
+              </tr>
+              <tr>
+                <th scope="row">Bootstrap</th>
+                <td>Framework CSS</td>
+                <td>Fornece estilos, componentes e um sistema de grid para acelerar a criação de páginas responsivas.</td>
+                <td>Assim como outros frameworks, oferece padrões reutilizáveis para a interface.</td>
+                <td>É voltado principalmente à apresentação com CSS; não substitui a estrutura HTML nem a lógica de JavaScript.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note"><strong>Em resumo:</strong> HTML estrutura, CSS apresenta, JavaScript programa comportamentos; bibliotecas e frameworks ajudam a organizar e acelerar o desenvolvimento.</p>
       </section>
 
       <section class="content-card" id="classes-ids">
@@ -89,6 +167,7 @@
       <h3>Nesta atividade</h3>
       <ul>
         <li><a href="#tabelas">Tabelas</a></li>
+        <li><a href="#linguagens-frameworks">Linguagens e frameworks</a></li>
         <li><a href="#classes-ids">Classes e IDs</a></li>
         <li><a href="#listas">Listas</a></li>
         <li><a href="#block-inline">Block e inline</a></li>
